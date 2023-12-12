@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="site.css">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+    <title>Document</title>
+</head>
+<body>
+   
+    <!--topbar-->
+    <div class="sidebar">
+        <!-- logo -->
+        <h1 class="logo">PUDHUB</h1>
+        <!-- list of menus -->
+        <div class="sidebar-menus">
+            <a href="#"><ion-icon name="storefront-outline"></ion-icon>Home</a>
+            <a href="#"><ion-icon name="receipt-outline"></ion-icon>Bills</a>
+            <a href="#"><ion-icon name="wallet-outline"></ion-icon>Wallet</a>
+            <a href="#"><ion-icon name="notifications-outline"></ion-icon>Notification</a>
+            <a href="#"><ion-icon name="chatbubbles-outline"></ion-icon>Contact Info</a>
+            <a href="#"><ion-icon name="settings-outline"></ion-icon>Settings</a>
+            
+             <!-- logout -->
+            
+        </div>
+        <!-- logout -->
+        <div class="sidebar-logout">
+            <a href="#"><ion-icon name="log-out-outline"></ion-icon>Logout</a>
+        </div>
+    </div>
+
+    <!--main badi-->
+
+    <div class="main">
+        <!-- main navbar -->
+        <div class="main-navbar">
+            <ion-icon class="menu-toggle" name="menu-outline"></ion-icon>
+            <div class="search">
+                <input type="text" placeholder="whatchu wanna buy">
+                <button class="search-btn">Search</button>
+            </div>
+            <div class="profile">
+                <a class="cart" href="#"><ion-icon name="cart-outline"></ion-icon></a>
+                <a class="user" href="#"><ion-icon name="person-outline"></ion-icon></a>
+            </div>
+        </div>
+    
+        <!-- main hightlight -->
+        <div class="main-highlight">
+            <div class="main-header">
+                <h2 class="main-title">Recommended </h2>
+                <div class="main-arrow" >
+                    <ion-icon class="back" name="chevron-back-circle-outline"></ion-icon>
+                    <ion-icon class="next" name="chevron-forward-circle-outline"></ion-icon>
+                </div>
+            <!-- highlights -->
+                <div class="highlight-wrapper">
+                    <div class="highlight-card">
+                        <img class="highlight-img" src="images/ampalaya.jpg">
+                        <div class="highlight-desc">
+                            <h4>Bitter Melon</h4>
+                            <p>94.34 PHP/kg</p>
+                        </div>
+                    </div>               
+                    <div class="highlight-card">
+                        <img class="highlight-img" src="images/artichoke.jpg">
+                        <div class="highlight-desc">
+                            <h4>Artichoke</h4>
+                            <p>103.25 PHP/kg</p>
+                        </div>
+                    </div>
+                    <div class="highlight-card">
+                        <img class="highlight-img" src="images/baguio-beans.jpg">
+                        <div class="highlight-desc">
+                            <h4>Baguio Beans</h4>
+                            <p>60.00 PHP/kg</p>
+                        </div>
+                    </div>
+                    <div class="highlight-card">
+                        <img class="highlight-img" src="images/banana-heart.jpg">
+                        <div class="highlight-desc">
+                            <h4>Banana Heart</h4>
+                            <p>145.00 PHP/kg</p>
+                        </div>
+                    </div>
+                
+            </div>
+        </div>  
+    </div>
+        <!-- main veges -->
+    <div class="main-veg">
+            <!-- filter -->
+        <div class="main-filter">
+        
+             <div>
+                <h2 class="main-title">Menu <br>Category</h2>
+                <div class="main-arrow">
+                    <ion-icon class="back" name="chevron-back-circle-outline"></ion-icon>
+                    <ion-icon class="next" name="chevron-forward-circle-outline"></ion-icon>
+                </div>
+            </div>
+            <div class="filter-wrapper">
+                    <div class="filter-card">
+                        <div class="filter-icon">
+                            <ion-icon name="leaf-outline"></ion-icon>
+                        </div>
+                        <p>All Menus</p>
+                    </div>
+                    <div class="filter-card">
+                        <div class="filter-icon">
+                        <ion-icon name="leaf-outline"></ion-icon>
+                        </div>
+                        <p>Leafy</p>
+                    </div>
+                    <div class="filter-card">
+                        <div class="filter-icon">
+                        <ion-icon name="leaf-outline"></ion-icon>
+                        </div>
+                        <p>Cruciferous</p>
+                    </div>
+                    <div class="filter-card">
+                        <div class="filter-icon">
+                        <ion-icon name="leaf-outline"></ion-icon>
+                        </div>
+                        <p>Marrow</p>
+                    </div>
+                    <div class="filter-card">
+                        <div class="filter-icon">
+                        <ion-icon name="leaf-outline"></ion-icon>
+                        </div>
+                        <p>Root</p>
+                    </div>
+                    <div class="filter-card">
+                        <div class="filter-icon">
+                        <ion-icon name="leaf-outline"></ion-icon>
+                        </div>
+                        <p>Plant Stem</p>
+                    </div>
+                    <div class="filter-card">
+                        <div class="filter-icon">
+                        <ion-icon name="leaf-outline"></ion-icon>
+                        </div>
+                        <p>Allium</p>
+                    </div>
+                    
+                </div>
+            </div>
+            <hr class="divider">
+
+            <div class="main-detail">
+                <h2 class="main-title">Choose your pokemon</h2>
+                <div class="detail-wrapper">
+                    <div class="detail-card">
+                        <img class="detail-img" src="images/basil.jpeg">
+                        <div class="detail-desc">
+                            <div class="detail-name">
+                                <h4>Basil</h4>
+                                <p class="detail-sub">Basil is an annual herbaceous plant in the mint family Lamiaceae. It has square stems with leaves that grow on opposite sides, and the leaves are rounded, slightly cupped, and curve to form at point at the tip. The leaves are generally light green, although some varieties have reddish or purplish leaves.</p>
+                                <p class="price">149.00 PHP/kg</p>
+                            </div>
+                            <ion-icon class="detail-favorites" name="bookmark-outline"></ion-icon>
+                        </div>
+                     </div>
+                     <div class="detail-card">
+                        <img class="detail-img" src="images/ampalaya.jpg">
+                        <div class="detail-desc">
+                            <div class="detail-name">
+                                <h4>Bitter Melon</h4>
+                                <p class="detail-sub">Bitter Melon is a climbing vine, nearly or quite smooth, annual vine. Tendrils are simple, up to 20 centimeters long. Leaves are 2.5 to 10 centimeters in diameter, cut nearly to the base into 5 to 7 lobes, oblong-ovate, variously toothed, and heart-shaped at the base.</p>
+                                <p class="price">94.34 PHP/kg</p>
+                            </div>
+                            <ion-icon class="detail-favorites" name="bookmark-outline"></ion-icon>
+                        </div>
+                     </div>
+                     <div class="detail-card">
+                        <img class="detail-img" src="images/artichoke.jpg">
+                        <div class="detail-desc">
+                            <div class="detail-name">
+                                <h4>Artichoke</h4>
+                                <p class="detail-sub">Artichoke, more correctly known as globe artichoke, is a thistle-like plant grown for the edible blossom bud. It is one of only a few vegetable plants grown in North America as a perennial, with new growth arising from the roots annually.</p>
+                                <p class="price">103.25 PHP/kg</p>
+                            </div>
+                            <ion-icon class="detail-favorites" name="bookmark-outline"></ion-icon>
+                        </div>
+                     </div>
+                     <div class="detail-card">
+                        <img class="detail-img" src="images/baguio-beans.jpg">
+                        <div class="detail-desc">
+                            <div class="detail-name">
+                                <h4>Baguio Beans</h4>
+                                <p class="detail-sub">Baguio Beans Patig- Baguio beans (Phaseolus vulgaris) also known as snap beans are annual legumes grown for its tender green pods or seeds. The pods are excellent sources of fiber, beta-carotene, potassium, calcium and phosphorus. The crop grows best in medium to high elevation with temperature ranges from 16 to 29oC.</p>
+                                <p class="price">60.00 PHP/kg</p>
+                            </div>
+                            <ion-icon class="detail-favorites" name="bookmark-outline"></ion-icon>
+                        </div>
+                     </div>
+                     <div class="detail-card">
+                        <img class="detail-img" src="images.jpg">
+                        <div class="detail-desc">
+                            <div class="detail-name">
+                                <h4></h4>
+                                <p class="detail-sub"></p>
+                                <p class="price"></p>
+                            </div>
+                            <ion-icon class="detail-favorites" name="bookmark-outline"></ion-icon>
+                        </div>
+                     </div>
+                     <div class="detail-card">
+                        <img class="detail-img" src="images.jpg">
+                        <div class="detail-desc">
+                            <div class="detail-name">
+                                <h4></h4>
+                                <p class="detail-sub"></p>
+                                <p class="price"></p>
+                            </div>
+                            <ion-icon class="detail-favorites" name="bookmark-outline"></ion-icon>
+                        </div>
+                     </div>
+                     <div class="detail-card">
+                        <img class="detail-img" src="images.jpg">
+                        <div class="detail-desc">
+                            <div class="detail-name">
+                                <h4></h4>
+                                <p class="detail-sub"></p>
+                                <p class="price"></p>
+                            </div>
+                            <ion-icon class="detail-favorites" name="bookmark-outline"></ion-icon>
+                        </div>
+                     </div>
+                     <div class="detail-card">
+                        <img class="detail-img" src="images.jpg">
+                        <div class="detail-desc">
+                            <div class="detail-name">
+                                <h4></h4>
+                                <p class="detail-sub"></p>
+                                <p class="price"></p>
+                            </div>
+                            <ion-icon class="detail-favorites" name="bookmark-outline"></ion-icon>
+                        </div>
+                     </div>
+                     <div class="detail-card">
+                        <img class="detail-img" src="images.jpg">
+                        <div class="detail-desc">
+                            <div class="detail-name">
+                                <h4></h4>
+                                <p class="detail-sub"></p>
+                                <p class="price"></p>
+                            </div>
+                            <ion-icon class="detail-favorites" name="bookmark-outline"></ion-icon>
+                        </div>
+                     </div>
+                     <div class="detail-card">
+                        <img class="detail-img" src="images.jpg">
+                        <div class="detail-desc">
+                            <div class="detail-name">
+                                <h4></h4>
+                                <p class="detail-sub"></p>
+                                <p class="price"></p>
+                            </div>
+                            <ion-icon class="detail-favorites" name="bookmark-outline"></ion-icon>
+                        </div>
+                     </div>
+                     
+                </div>
+            </div>
+            
+            <!-- end pilter /// aron rani di ko maglibog kay potaena andaming div -->
+        </div>
+ 
+    </div>
+
+
+
+</body>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <script src="site.js"></script>
+</html>

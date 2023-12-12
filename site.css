@@ -1,0 +1,355 @@
+:root{
+    --primaryColor: #6AA164;
+    --secondaryColor: #A8D967;
+    --whiteColor: #fff;
+    --black: #222;
+    --yellow: #F1E287;
+    --darkPink: #C88EA7;
+    --pink: #99627A;
+    --cream:#f5f1e0;
+    --darkGreen:#2b6e30;
+    --grey: #DED4D4;
+}
+
+*{
+
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    font-family: 'Open Sans', sans-serif;
+}
+
+body{
+    width: 100%;
+    height: auto;
+    display: flex;
+}
+
+.sidebar{
+    height: 100%;
+    width: 250px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    position: fixed;
+    top: 0;
+    left: 0;
+    padding: 2%;
+    
+    background-color: var(--primaryColor);
+    color: var(--whiteColor);
+}
+
+.sidebar-menus a, .sidebar-logout a {
+    padding: 5% 8%;
+    margin: 0.5rem 0;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 1rem;
+    text-decoration: none;
+    color: var(--whiteColor);
+   
+}
+
+.sidebar-menus a ion-icon, .sidebar-logout a{
+    font-size:25px;
+}
+
+.sidebar-menus a:hover, .sidebar-logout a:hover{
+    background-color: var(--yellow);
+    border-radius: 50px;
+    color: var(--darkGreen);
+}
+
+.main{
+    width: 100%;
+    height: max-content;
+    padding: 2%;
+    background-color: var(--cream);
+    margin-left: 250px;
+    min-height: 100vh;
+}
+
+.main-navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.menu-toggle{
+    display: none;
+}
+
+.search{
+    width: 60%;
+    height: 40px;
+    display: flex;
+    justify-content: space-around;
+    background-color: var(--whiteColor);
+    border-radius: 20px;
+}
+
+.search input{
+    width: 80%;
+    height: 100%;
+    padding: 20px;
+    border: none;
+    border-radius: 20px;
+}
+
+.search-btn{
+    background-color: var(--yellow);
+    color: var(--primaryColor);
+    border: none;
+    border-radius: 20px;
+    width: 150px;
+    cursor: pointer;
+}
+
+.search:hover {
+    box-shadow: rgba(149, 157, 165, 0.2)0px 8px 24px;
+}
+
+.search-btn:hover{
+    background-color: var(--primaryColor);
+    color: var(--whiteColor);
+}
+
+.profile{
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.cart, .user{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--whiteColor);
+    font-size: 20px;
+    color: var(--primaryColor);
+    text-decoration: none;
+    padding: 0 10px;
+    height: 40px;
+    border-radius: 20px;
+}
+
+.cart:hover, .user:hover{
+    box-shadow: rgba(149, 157, 165, 0.2)0px 8px 24px;
+    background-color: var(--primaryColor);
+    color: white;
+}
+
+.main-highlight{
+    margin: 3% 0;
+    padding: 3%;
+    border-radius: 8px;
+    background-color:var(--yellow); 
+}
+
+.main-header{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.main-title{
+    font-size: 20px;
+}
+
+.main-arrow{
+    font-size: 24px;
+}
+
+.back, .next{
+    cursor: pointer;
+}
+
+.back:hover, .next:hover{
+    color: var(--primaryColor);
+    
+}
+
+.highlight-wrapper{
+    width: 100%;
+    display: flex;
+    padding: 1%;
+    border-radius: 8px;
+    gap: 1.5rem;
+    overflow-x: hidden;
+}
+
+.highlight-card{
+    display: flex;
+    flex-direction: row;
+    min-width: 200px;
+    width: 80%;
+    height: 100%;
+    gap: 1rem;
+    border-radius: 8px;
+    padding: 1%;
+    background-color: var(--whiteColor);
+    cursor: pointer;
+    border: 1px solid var(--darkGreen);
+    
+}
+
+.highlight-img{
+    width: 40px;
+    height: 40px;
+    border-radius: 8px;
+    object-fit: cover;
+    object-position: center;
+
+}
+
+.highlight-desc h4{
+    color: var(--darkGreen);
+    padding: 5px;
+}
+
+.highlight-desc p{
+    color: var(--black);
+    font-size: 13px;
+}
+
+.highlight-card:hover, .highlight-desc h4:hover{
+    background-color: var(--secondaryColor);
+    box-shadow: rgba(149, 157, 165, 0.2)0px 8px 24px;
+    
+   
+
+}
+
+.main-veg{
+    min-height: 100%;
+    background-color: rgb(241, 226, 135);
+    padding: 2%;
+    border-radius: 8px;
+}
+
+.main-filter{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-top: 1.5rem;
+    gap: 1rem;
+
+}
+
+.filter-wrapper{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow-x: hidden;
+    width: 100%;
+    height: 100px;
+    gap: 5rem;
+    
+}
+
+
+.filter-card{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    min-width: 80px;
+    height: 100%;
+    background-color: var(--whiteColor);
+    color: var(--black);
+    border-radius: 8px;
+    border: 1px solid var(--primaryColor);
+    font-size: 14px;
+    cursor: pointer;
+}
+
+
+.filter-icon{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 90%;
+    height: 70%;
+    font-size: 30px;
+    background-color: rgb(187, 224, 119);
+    color: var(--primaryColor);
+    border-radius: 8px ;
+}
+
+.filter-card:hover{
+    background-color: var(--primaryColor);
+    color: var(--whiteColor);
+}
+.filter-card:hover .filter-icon{
+    background-color: rgb(231, 235, 170);
+}
+
+.divider{
+    margin: 1rem 0;
+    height: 2px;
+    width: 100%;
+    background-color: var(--primaryColor);
+    border: none;
+}
+
+.main-detail{
+    margin: 1rem 0 1.5rem 0;
+}
+
+.detail-wrapper{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px,1fr));
+    width: 100%;
+    margin-top: 1rem;
+    gap: 2%;
+    border-radius: 8px;
+}
+
+.detail-card{
+    min-height: 280px;
+    height: 100%;
+    background-color: var(--whiteColor);
+    border-radius: 8px;
+    margin: 1% 0;
+    box-shadow: rgba(149, 157, 165, 0.2)0px 8px 24px;
+    cursor: pointer;
+}
+
+.detail-img{
+    width: 100%;
+    height: 180px;
+    border-radius: 8px;
+    object-fit: cover;
+    object-position: center;
+    filter:brightness(0.8)
+}
+
+.detail-desc{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 3%;
+    width: 100%;
+}
+/* para sa kanang price sa card nga nigawas, fix it later */
+.detail-sub{
+    font-size: 12px;
+    color: var(--grey);
+    letter-spacing: 0.5;
+    margin: 1% 0;
+    display: -webkit-box;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 4;
+
+}
+
+.detail-favorites{
+    font-size: 24px;
+}
