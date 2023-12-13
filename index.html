@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="site.css">
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
     <title>Document</title>
 </head>
 <body>
@@ -19,7 +20,6 @@
             <a href="#"><ion-icon name="receipt-outline"></ion-icon>Bills</a>
             <a href="#"><ion-icon name="wallet-outline"></ion-icon>Wallet</a>
             <a href="#"><ion-icon name="notifications-outline"></ion-icon>Notification</a>
-            <a href="#"><ion-icon name="chatbubbles-outline"></ion-icon>Contact Info</a>
             <a href="#"><ion-icon name="settings-outline"></ion-icon>Settings</a>
             
              <!-- logout -->
@@ -51,34 +51,30 @@
         <div class="main-highlight">
             <div class="main-header">
                 <h2 class="main-title">Recommended </h2>
-                <div class="main-arrow" >
-                    <ion-icon class="back" name="chevron-back-circle-outline"></ion-icon>
-                    <ion-icon class="next" name="chevron-forward-circle-outline"></ion-icon>
-                </div>
             <!-- highlights -->
                 <div class="highlight-wrapper">
-                    <div class="highlight-card">
+                    <div class="highlight-card" data-name="p-2">
                         <img class="highlight-img" src="images/ampalaya.jpg">
                         <div class="highlight-desc">
                             <h4>Bitter Melon</h4>
                             <p>94.34 PHP/kg</p>
                         </div>
                     </div>               
-                    <div class="highlight-card">
+                    <div class="highlight-card" data-name="p-3">
                         <img class="highlight-img" src="images/artichoke.jpg">
                         <div class="highlight-desc">
                             <h4>Artichoke</h4>
                             <p>103.25 PHP/kg</p>
                         </div>
                     </div>
-                    <div class="highlight-card">
+                    <div class="highlight-card" data-name="p-4">
                         <img class="highlight-img" src="images/baguio-beans.jpg">
                         <div class="highlight-desc">
                             <h4>Baguio Beans</h4>
                             <p>60.00 PHP/kg</p>
                         </div>
                     </div>
-                    <div class="highlight-card">
+                    <div class="highlight-card" data-name="p-5">
                         <img class="highlight-img" src="images/banana-heart.jpg">
                         <div class="highlight-desc">
                             <h4>Banana Heart</h4>
@@ -152,7 +148,7 @@
             <div class="main-detail">
                 <h2 class="main-title">Choose your pokemon</h2>
                 <div class="detail-wrapper">
-                    <div class="detail-card">
+                    <div class="detail-card" data-name="p-1">
                         <img class="detail-img" src="images/basil.jpeg">
                         <div class="detail-desc">
                             <div class="detail-name">
@@ -163,7 +159,7 @@
                             <ion-icon class="detail-favorites" name="bookmark-outline"></ion-icon>
                         </div>
                      </div>
-                     <div class="detail-card">
+                     <div class="detail-card" data-name="p-2">
                         <img class="detail-img" src="images/ampalaya.jpg">
                         <div class="detail-desc">
                             <div class="detail-name">
@@ -174,7 +170,7 @@
                             <ion-icon class="detail-favorites" name="bookmark-outline"></ion-icon>
                         </div>
                      </div>
-                     <div class="detail-card">
+                     <div class="detail-card" data-name="p-3">
                         <img class="detail-img" src="images/artichoke.jpg">
                         <div class="detail-desc">
                             <div class="detail-name">
@@ -185,7 +181,7 @@
                             <ion-icon class="detail-favorites" name="bookmark-outline"></ion-icon>
                         </div>
                      </div>
-                     <div class="detail-card">
+                     <div class="detail-card" data-name="p-4">
                         <img class="detail-img" src="images/baguio-beans.jpg">
                         <div class="detail-desc">
                             <div class="detail-name">
@@ -196,7 +192,7 @@
                             <ion-icon class="detail-favorites" name="bookmark-outline"></ion-icon>
                         </div>
                      </div>
-                     <div class="detail-card">
+                     <div class="detail-card" data-name="p-5">
                         <img class="detail-img" src="images/banana-heart.jpg">
                         <div class="detail-desc">
                             <div class="detail-name">
@@ -207,7 +203,7 @@
                             <ion-icon class="detail-favorites" name="bookmark-outline"></ion-icon>
                         </div>
                      </div>
-                     <div class="detail-card">
+                     <div class="detail-card" data-name="p-6">
                         <img class="detail-img" src="images/bok-choy.jpg">
                         <div class="detail-desc">
                             <div class="detail-name">
@@ -218,7 +214,7 @@
                             <ion-icon class="detail-favorites" name="bookmark-outline"></ion-icon>
                         </div>
                      </div>
-                     <div class="detail-card">
+                     <div class="detail-card" data-name="p-7">
                         <img class="detail-img" src="images/brocolli.jpg">
                         <div class="detail-desc">
                             <div class="detail-name">
@@ -229,7 +225,7 @@
                             <ion-icon class="detail-favorites" name="bookmark-outline"></ion-icon>
                         </div>
                      </div>
-                     <div class="detail-card">
+                     <div class="detail-card" data-name="p-8">
                         <img class="detail-img" src="images/capsicum.jpg">
                         <div class="detail-desc">
                             <div class="detail-name">
@@ -240,7 +236,7 @@
                             <ion-icon class="detail-favorites" name="bookmark-outline"></ion-icon>
                         </div>
                      </div>
-                     <div class="detail-card">
+                     <div class="detail-card" data-name="p-9">
                         <img class="detail-img" src="images/carrot.jpg">
                         <div class="detail-desc">
                             <div class="detail-name">
@@ -251,7 +247,7 @@
                             <ion-icon class="detail-favorites" name="bookmark-outline"></ion-icon>
                         </div>
                      </div>
-                     <div class="detail-card">
+                     <div class="detail-card" data-name="p-10">
                         <img class="detail-img" src="images/cauliflower.jpg">
                         <div class="detail-desc">
                             <div class="detail-name">
@@ -262,7 +258,7 @@
                             <ion-icon class="detail-favorites" name="bookmark-outline"></ion-icon>
                         </div>
                      </div>
-                     <div class="detail-card">
+                     <div class="detail-card" data-name="p-11">
                         <img class="detail-img" src="images/cherry-tomato.jpg">
                         <div class="detail-desc">
                             <div class="detail-name">
@@ -273,7 +269,7 @@
                             <ion-icon class="detail-favorites" name="bookmark-outline"></ion-icon>
                         </div>
                      </div>
-                     <div class="detail-card">
+                     <div class="detail-card" data-name="p-12">
                         <img class="detail-img" src="images/corn.jpg">
                         <div class="detail-desc">
                             <div class="detail-name">
@@ -284,7 +280,7 @@
                             <ion-icon class="detail-favorites" name="bookmark-outline"></ion-icon>
                         </div>
                      </div>
-                     <div class="detail-card">
+                     <div class="detail-card" data-name="p-13">
                         <img class="detail-img" src="images/cucumber.jpg">
                         <div class="detail-desc">
                             <div class="detail-name">
@@ -295,7 +291,7 @@
                             <ion-icon class="detail-favorites" name="bookmark-outline"></ion-icon>
                         </div>
                      </div>
-                     <div class="detail-card">
+                     <div class="detail-card" data-name="p-14">
                         <img class="detail-img" src="images/garlic.jpeg">
                         <div class="detail-desc">
                             <div class="detail-name">
@@ -306,7 +302,7 @@
                             <ion-icon class="detail-favorites" name="bookmark-outline"></ion-icon>
                         </div>
                      </div>
-                     <div class="detail-card">
+                     <div class="detail-card" data-name="p-15">
                         <img class="detail-img" src="images/ginger.jpg">
                         <div class="detail-desc">
                             <div class="detail-name">
@@ -317,7 +313,7 @@
                             <ion-icon class="detail-favorites" name="bookmark-outline"></ion-icon>
                         </div>
                      </div>
-                     <div class="detail-card">
+                     <div class="detail-card" data-name="p-16">
                         <img class="detail-img" src="images/green-cabbage.jpg">
                         <div class="detail-desc">
                             <div class="detail-name">
@@ -328,7 +324,7 @@
                             <ion-icon class="detail-favorites" name="bookmark-outline"></ion-icon>
                         </div>
                      </div>
-                     <div class="detail-card">
+                     <div class="detail-card" data-name="p-17">
                         <img class="detail-img" src="images/iceberg-lettuce.jpg">
                         <div class="detail-desc">
                             <div class="detail-name">
@@ -339,7 +335,7 @@
                             <ion-icon class="detail-favorites" name="bookmark-outline"></ion-icon>
                         </div>
                      </div>
-                     <div class="detail-card">
+                     <div class="detail-card" data-name="p-18">
                         <img class="detail-img" src="images/jalapeno.jpg">
                         <div class="detail-desc">
                             <div class="detail-name">
@@ -350,7 +346,7 @@
                             <ion-icon class="detail-favorites" name="bookmark-outline"></ion-icon>
                         </div>
                      </div>
-                     <div class="detail-card">
+                     <div class="detail-card" data-name="p-19">
                         <img class="detail-img" src="images/Kangkong.jpg">
                         <div class="detail-desc">
                             <div class="detail-name">
@@ -361,7 +357,7 @@
                             <ion-icon class="detail-favorites" name="bookmark-outline"></ion-icon>
                         </div>
                      </div>
-                     <div class="detail-card">
+                     <div class="detail-card" data-name="p-20">
                         <img class="detail-img" src="images/leek.jpg">
                         <div class="detail-desc">
                             <div class="detail-name">
@@ -372,7 +368,7 @@
                             <ion-icon class="detail-favorites" name="bookmark-outline"></ion-icon>
                         </div>
                      </div>
-                     <div class="detail-card">
+                     <div class="detail-card" data-name="p-21">
                         <img class="detail-img" src="images/mung-beans.jpg">
                         <div class="detail-desc">
                             <div class="detail-name">
@@ -383,7 +379,7 @@
                             <ion-icon class="detail-favorites" name="bookmark-outline"></ion-icon>
                         </div>
                      </div>
-                     <div class="detail-card">
+                     <div class="detail-card" data-name="p-22">
                         <img class="detail-img" src="images/okra.jpg">
                         <div class="detail-desc">
                             <div class="detail-name">
@@ -394,7 +390,7 @@
                             <ion-icon class="detail-favorites" name="bookmark-outline"></ion-icon>
                         </div>
                      </div>
-                     <div class="detail-card">
+                     <div class="detail-card" data-name="p-23">
                         <img class="detail-img" src="images/onions-002.jpg">
                         <div class="detail-desc">
                             <div class="detail-name">
@@ -405,7 +401,7 @@
                             <ion-icon class="detail-favorites" name="bookmark-outline"></ion-icon>
                         </div>
                      </div>
-                     <div class="detail-card">
+                     <div class="detail-card" data-name="p-24">
                         <img class="detail-img" src="images/peanut.jpg">
                         <div class="detail-desc">
                             <div class="detail-name">
@@ -416,7 +412,7 @@
                             <ion-icon class="detail-favorites" name="bookmark-outline"></ion-icon>
                         </div>
                      </div>
-                     <div class="detail-card">
+                     <div class="detail-card" data-name="p-25">
                         <img class="detail-img" src="images/peas.jpg">
                         <div class="detail-desc">
                             <div class="detail-name">
@@ -427,7 +423,7 @@
                             <ion-icon class="detail-favorites" name="bookmark-outline"></ion-icon>
                         </div>
                      </div>
-                     <div class="detail-card">
+                     <div class="detail-card" data-name="p-26">
                         <img class="detail-img" src="images/potato.jpg">
                         <div class="detail-desc">
                             <div class="detail-name">
@@ -438,7 +434,7 @@
                             <ion-icon class="detail-favorites" name="bookmark-outline"></ion-icon>
                         </div>
                      </div>
-                     <div class="detail-card">
+                     <div class="detail-card" data-name="p-27">
                         <img class="detail-img" src="images/radish.jpg">
                         <div class="detail-desc">
                             <div class="detail-name">
@@ -449,7 +445,7 @@
                             <ion-icon class="detail-favorites" name="bookmark-outline"></ion-icon>
                         </div>
                      </div>
-                     <div class="detail-card">
+                     <div class="detail-card" data-name="p-28">
                         <img class="detail-img" src="images/red-cabbage.jpg">
                         <div class="detail-desc">
                             <div class="detail-name">
@@ -460,7 +456,7 @@
                             <ion-icon class="detail-favorites" name="bookmark-outline"></ion-icon>
                         </div>
                      </div>
-                     <div class="detail-card">
+                     <div class="detail-card" data-name="p-29">
                         <img class="detail-img" src="images/romaine-lettuce.jpg">
                         <div class="detail-desc">
                             <div class="detail-name">
@@ -471,18 +467,8 @@
                             <ion-icon class="detail-favorites" name="bookmark-outline"></ion-icon>
                         </div>
                      </div>
-                     <div class="detail-card">
-                        <img class="detail-img" src="images/shallot.jpg">
-                        <div class="detail-desc">
-                            <div class="detail-name">
-                                <h4>Shallot</h4>
-                                <p class="detail-sub">Shallots are small round vegetables that are the roots of a crop and are similar to onions. They have a strong taste and are used for flavouring other food.</p>
-                                <p class="price">279.00 PHP/kg</p>
-                            </div>
-                            <ion-icon class="detail-favorites" name="bookmark-outline"></ion-icon>
-                        </div>
-                     </div>
-                     <div class="detail-card">
+              
+                     <div class="detail-card" data-name="p-30">
                         <img class="detail-img" src="images/soya.jpg">
                         <div class="detail-desc">
                             <div class="detail-name">
@@ -493,7 +479,7 @@
                             <ion-icon class="detail-favorites" name="bookmark-outline"></ion-icon>
                         </div>
                      </div>
-                     <div class="detail-card">
+                     <div class="detail-card" data-name="p-31">
                         <img class="detail-img" src="images/spinach.jpg">
                         <div class="detail-desc">
                             <div class="detail-name">
@@ -504,7 +490,7 @@
                             <ion-icon class="detail-favorites" name="bookmark-outline"></ion-icon>
                         </div>
                      </div>
-                     <div class="detail-card">
+                     <div class="detail-card" data-name="p-32">
                         <img class="detail-img" src="images/spring-onion.jpg">
                         <div class="detail-desc">
                             <div class="detail-name">
@@ -515,18 +501,8 @@
                             <ion-icon class="detail-favorites" name="bookmark-outline"></ion-icon>
                         </div>
                      </div>
-                     <div class="detail-card">
-                        <img class="detail-img" src="images/squash.jpg">
-                        <div class="detail-desc">
-                            <div class="detail-name">
-                                <h4>Squash</h4>
-                                <p class="detail-sub">A squash is the edible fruit of squash plant, but it's considered a vegetable in the kitchen, like peppers and tomatoes. As a verb, squash means to compress or mash — like the way your picky little sister might squash the roasted squash on her plate with a fork.</p>
-                                <p class="price">30.00 PHP/kg</p>
-                            </div>
-                            <ion-icon class="detail-favorites" name="bookmark-outline"></ion-icon>
-                        </div>
-                     </div>
-                     <div class="detail-card">
+               
+                     <div class="detail-card" data-name="p-33">
                         <img class="detail-img" src="images/sweet-potato.jpg">
                         <div class="detail-desc">
                             <div class="detail-name">
@@ -537,7 +513,7 @@
                             <ion-icon class="detail-favorites" name="bookmark-outline"></ion-icon>
                         </div>
                      </div>
-                     <div class="detail-card">
+                     <div class="detail-card" data-name="p-34">
                         <img class="detail-img" src="images/talong.jpg">
                         <div class="detail-desc">
                             <div class="detail-name">
@@ -548,7 +524,7 @@
                             <ion-icon class="detail-favorites" name="bookmark-outline"></ion-icon>
                         </div>
                      </div>
-                     <div class="detail-card">
+                     <div class="detail-card" data-name="p-35">
                         <img class="detail-img" src="images/tomato.jpg">
                         <div class="detail-desc">
                             <div class="detail-name">
@@ -559,39 +535,128 @@
                             <ion-icon class="detail-favorites" name="bookmark-outline"></ion-icon>
                         </div>
                      </div>
-                     <div class="detail-card">
-                        <img class="detail-img" src="images/turmeric.jpg">
-                        <div class="detail-desc">
-                            <div class="detail-name">
-                                <h4>Turmeric</h4>
-                                <p class="detail-sub">Turmeric is a rhizome (root) that comes from the plant of the ginger family (Zingiberaceae) native to India and is used as a spice in cooking. Curcumin is a component of turmeric that has been most studied for its antiinflammatory effects.</p>
-                                <p class="price">149.00 PHP/kg</p>
+<!-- preview sht -->
+                <div class="products-preview">
+                    
+                    <div class="preview" data-target="p-1">
+                                <i class="fas fa-times"></i>
+                                <img src="images/basil.jpeg" alt="">
+                                <h3>Basil</h3>
+                                    <p>Basil is an annual herbaceous plant in the mint family Lamiaceae. It has square stems with leaves that grow on opposite sides, and the leaves are rounded, slightly cupped, and curve to form at point at the tip. The leaves are generally light green, although some varieties have reddish or purplish leaves.</p>
+                                    <div class="prices">149 PHP/kg</div>
+                                    <div class="buttons">
+                                        <a href="#" class="buy">Buy Now</a>
+                                        <a href="#" class="carts">Add to Cart</a>
+                                    </div>
                             </div>
-                            <ion-icon class="detail-favorites" name="bookmark-outline"></ion-icon>
-                        </div>
-                     </div>
-                     <div class="detail-card">
-                        <img class="detail-img" src="images/turnip.jpg">
-                        <div class="detail-desc">
-                            <div class="detail-name">
-                                <h4>Turnip</h4>
-                                <p class="detail-sub">Turnip, Brassica rapa, is an herbaceous annual or biennial plant in the family Brassicaceae grown for its edible roots and leaves. The plant possesses erect stems and 8–12 leaves forming a crown. The leaves are light green in color, hairy and thin.</p>
-                                <p class="price">71.00 PHP/kg</p>
+                            <div class="preview" data-target="p-2">
+                                <i class="fas fa-times"></i>
+                                <img src="images/ampalaya.jpg" alt="">
+                                <h3>Bitter Melon</h3>
+                                    <p>Bitter Melon is a climbing vine, nearly or quite smooth, annual vine. Tendrils are simple, up to 20 centimeters long. Leaves are 2.5 to 10 centimeters in diameter, cut nearly to the base into 5 to 7 lobes, oblong-ovate, variously toothed, and heart-shaped at the base.</p>
+                                    <div class="prices">94.34 PHP/kg</div>
+                                    <div class="buttons">
+                                        <a href="#" class="buy">Buy Now</a>
+                                        <a href="#" class="carts">Add to Cart</a>
+                                    </div>
                             </div>
-                            <ion-icon class="detail-favorites" name="bookmark-outline"></ion-icon>
-                        </div>
-                     </div>
-                     <div class="detail-card">
-                        <img class="detail-img" src="images/zucchini.jpeg">
-                        <div class="detail-desc">
-                            <div class="detail-name">
-                                <h4>Zucchini</h4>
-                                <p class="detail-sub">The zucchini is a long, cylindrical vegetable, slightly smaller at the stem end, usually dark green in color. The flesh is a pale greenish-white and has a delicate, almost sweet flavor. Zucchini fruit grows quickly and is harvested within 2 to 7 days of flowering.</p>
-                                <p class="price">209.00 PHP/kg</p>
+                             <div class="preview" data-target="p-3">
+                                <i class="fas fa-times"></i>
+                                <img src="images/artichoke.jpg" alt="">
+                                <h3>Artichoke</h3>
+                                    <p>Artichoke, more correctly known as globe artichoke, is a thistle-like plant grown for the edible blossom bud. It is one of only a few vegetable plants grown in North America as a perennial, with new growth arising from the roots annually.</p>
+                                    <div class="prices">103.25 PHP/kg</div>
+                                    <div class="buttons">
+                                        <a href="#" class="buy">Buy Now</a>
+                                        <a href="#" class="carts">Add to Cart</a>
+                                    </div>
                             </div>
-                            <ion-icon class="detail-favorites" name="bookmark-outline"></ion-icon>
-                        </div>
-                     </div>
+                            <div class="preview" data-target="p-4">
+                                <i class="fas fa-times"></i>
+                                <img src="images/baguio-beans.jpg" alt="">
+                                <h3>Baguio Beans</h3>
+                                    <p>Baguio Beans Patig- Baguio beans (Phaseolus vulgaris) also known as snap beans are annual legumes grown for its tender green pods or seeds. The pods are excellent sources of fiber, beta-carotene, potassium, calcium and phosphorus. The crop grows best in medium to high elevation with temperature ranges from 16 to 29oC.</p>
+                                    <div class="prices">60 PHP/kg</div>
+                                    <div class="buttons">
+                                        <a href="#" class="buy">Buy Now</a>
+                                        <a href="#" class="carts">Add to Cart</a>
+                                    </div>
+                            </div>
+                            <div class="preview" data-target="p-5">
+                                <i class="fas fa-times"></i>
+                                <img src="images/banana-heart.jpg" alt="">
+                                <h3>Banana Heart</h3>
+                                    <p>Banana blossom, also known as a “banana heart”, is a fleshy, purple-skinned flower, shaped like a tear, which grows at the end of a banana fruit cluster. Traditionally used in south-east Asian and Indian cooking, it can also be eaten raw and its chunky, flaky texture makes it an ideal substitute for fish.</p>
+                                    <div class="prices">145 PHP/kg</div>
+                                    <div class="buttons">
+                                        <a href="#" class="buy">Buy Now</a>
+                                        <a href="#" class="carts">Add to Cart</a>
+                                    </div>
+                            </div>
+                            <div class="preview" data-target="p-6">
+                                <i class="fas fa-times"></i>
+                                <img src="images/bok-choy.jpg" alt="">
+                                <h3>Bok Choy</h3>
+                                    <p>Bok Choy, also called white Chinese cabbage, belongs to the leafy vegetable pak choi family of Chinese brassicas. Bok Choy has white or green, thick, crunchy stems with light to dark green wide leaves. Size can vary from 4-12 inches tall! All parts, stems and leaves, are eaten.</p>
+                                    <div class="prices">128.00 PHP/kg</div>
+                                    <div class="buttons">
+                                        <a href="#" class="buy">Buy Now</a>
+                                        <a href="#" class="carts">Add to Cart</a>
+                                    </div>
+                            </div>
+                            <div class="preview" data-target="p-7">
+                                <i class="fas fa-times"></i>
+                                <img src="images/brocolli.jpg" alt="">
+                                <h3>Broccoli</h3>
+                                    <p>Broccoli is a fast-growing annual plant that grows 60-90 cm (24–35 inches) tall. Upright and branching with leathery leaves, broccoli bears dense green clusters of flower buds at the ends of the central axis and the branches.</p>
+                                    <div class="prices">80.00 PHP/kg</div>
+                                    <div class="buttons">
+                                        <a href="#" class="buy">Buy Now</a>
+                                        <a href="#" class="carts">Add to Cart</a>
+                                    </div>
+                            </div>
+                            <div class="preview" data-target="p-8">
+                                <i class="fas fa-times"></i>
+                                <img src="images/capsicum.jpg" alt="">
+                                <h3>Capsicum</h3>
+                                    <p>Capsicum spp. is a genus of flowering plants in the nightshade family (Solanaceae) and has many subspecies, varieties and cultivars. The common names of Capsicum encompass cayenne pepper, tabasco pepper, red pepper, hot pepper, chili pepper, paprika, cayenne, Hungarian pepper, and pimento pepper</p>
+                                    <div class="prices">125.00 PHP/kg</div>
+                                    <div class="buttons">
+                                        <a href="#" class="buy">Buy Now</a>
+                                        <a href="#" class="carts">Add to Cart</a>
+                                    </div>
+                            </div>
+                            <div class="preview" data-target="p-9">
+                                <i class="fas fa-times"></i>
+                                <img src="images/carrot.jpg" alt="">
+                                <h3>Carrot</h3>
+                                    <p>Carrot is a biennial, belonging to the family Apiaceae, and is an important vegetable for its fleshy edible, colorful roots. It varies in colour from white, yellow, orange, light purple, deep red to deep violet.</p>
+                                    <div class="prices">22.00 PHP/kg</div>
+                                    <div class="buttons">
+                                        <a href="#" class="buy">Buy Now</a>
+                                        <a href="#" class="carts">Add to Cart</a>
+                                    </div>
+                            </div>
+                            <div class="preview" data-target="p-10">
+                                <i class="fas fa-times"></i>
+                                <img src="images/cauliflower.jpg" alt="">
+                                <h3>Cauliflower</h3>
+                                    <p>Cauliflowers are annual plants that reach about 0.5 metre (1.5 feet) tall and bear large rounded leaves that resemble collards (Brassica oleracea, variety acephala). As desired for food, the terminal cluster forms a firm, succulent “curd,” or head, that is an immature inflorescence (cluster of flowers).</p>
+                                    <div class="prices">50.00 PHP/kg</div>
+                                    <div class="buttons">
+                                        <a href="#" class="buy">Buy Now</a>
+                                        <a href="#" class="carts">Add to Cart</a>
+                                    </div>
+                            </div>
+
+                    </div>
+                    
+
+
+                </div>
+                
+                 
+                   
                      
                      
                 </div>
