@@ -20,6 +20,11 @@
     font-family: 'Open Sans', sans-serif;
 }
 
+html{
+    font-size: 62.5%;
+    overflow-x: hidden;
+}
+
 body{
     width: 100%;
     height: auto;
@@ -36,7 +41,7 @@ body{
     top: 0;
     left: 0;
     padding: 2%;
-    
+    font-size: 20px;
     background-color: var(--primaryColor);
     color: var(--whiteColor);
 }
@@ -69,6 +74,7 @@ body{
     padding: 2%;
     background-color: var(--cream);
     margin-left: 250px;
+    
    
 }
 
@@ -76,6 +82,7 @@ body{
     display: flex;
     justify-content: space-between;
     align-items: center;
+    
 }
 
 .menu-toggle{
@@ -89,6 +96,7 @@ body{
     justify-content: space-around;
     background-color: var(--whiteColor);
     border-radius: 20px;
+    
 }
 
 .search input{
@@ -97,6 +105,7 @@ body{
     padding: 20px;
     border: none;
     border-radius: 20px;
+    font-size: 18px;
 }
 
 .search-btn{
@@ -157,7 +166,7 @@ body{
 }
 
 .main-title{
-    font-size: 20px;
+    font-size: 22px;
 }
 
 .main-arrow{
@@ -180,6 +189,7 @@ body{
     border-radius: 8px;
     gap: 1.5rem;
     overflow-x: hidden;
+    font-size: 20px;
 }
 
 .highlight-card{
@@ -299,6 +309,7 @@ body{
 
 .main-detail{
     margin: 1rem 0 1.5rem 0;
+    
 }
 
 .detail-wrapper{
@@ -308,6 +319,7 @@ body{
     margin-top: 1rem;
     gap: 2%;
     border-radius: 8px;
+    
 }
 
 .detail-card{
@@ -317,6 +329,7 @@ body{
     border-radius: 8px;
     margin: 1% 0;
     cursor: pointer;
+    
 }
 
 .detail-img{
@@ -334,9 +347,11 @@ body{
     align-items: flex-start;
     padding: 3%;
     width: 100%;
+    font-size: 15px;
 }
 /* para sa kanang price sa card nga nigawas, fix it later */
 /* i shoretened the paragraphs using webkit sht, need js in order to see all of em */
+/* mana ni nga issue */
 .detail-sub{
     font-size: 12px;
     color: var(--grey);
@@ -347,6 +362,9 @@ body{
     overflow: hidden;
     -webkit-box-orient: vertical;
     -webkit-line-clamp: 3;
+    
+    font-size: 15px;
+
 
 }
 
@@ -375,6 +393,101 @@ body{
 .detail-card:hover .price {
     letter-spacing: 1.5;
 }
+
+/* for pop card up sht */
+.products-preview{
+    position: fixed;
+    top: 0; left: 0;
+    min-height: 100vh;
+    width: 100%;
+    display: none;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.products-preview .preview{
+    display: none;
+    padding: 2rem;
+    text-align: center;
+    justify-content: center;
+    background: #f3f1e3;
+    position: relative;
+    margin: 2rem;
+    width: 40rem;
+    border: 1px solid;
+}
+
+
+.products-preview .preview.active{
+    display: inline-block;    
+}
+
+.products-preview .preview img{
+    height: 30rem;
+    width: 30rem;
+    border: 0.5px solid;
+}
+
+.products-preview .preview .fa-times{
+    position: absolute;
+    top: 1rem; right: 1.5rem;
+    cursor: pointer;
+    color: #444;
+    font-size: 2rem;
+}
+
+.products-preview .preview h3{
+    color: var(--darkGreen);
+    padding: .5rem 0;
+    font-size: 2.5rem;
+}
+
+.products-preview .preview p{
+    line-height: 1.5;
+    padding: 1rem 0;
+    font-size: 15px;
+    color: #777;
+}
+
+.products-preview .preview .prices{
+    padding: 1rem 0;
+    font-size: 1.5rem;
+    color: var(--darkGreen);
+}
+
+.products-preview .preview .buttons{
+    display: flex;
+    gap: 1.5rem;
+    flex-wrap: wrap;
+    margin-top: 1rem;
+}
+
+.products-preview .preview .buttons a{
+    flex: 1 1 16rem;
+    padding: 1rem;
+    font-size: 1.8rem;
+    color: #444;
+    border: .1rem solid #444;
+
+}
+
+.products-preview .preview .buttons a.carts{
+    background: #333;
+    color: var(--whiteColor);
+}
+
+.products-preview .preview .buttons a.carts:hover{
+    background: #111;
+    color: var(--whiteColor);
+
+}
+
+.products-preview .preview .buttons a.buy:hover{
+    background: #444;
+    color: var(--whiteColor);
+}
+
 /* for mobile sht */
 @media screen and (max-width:640px) {
     .sidebar{
@@ -403,5 +516,12 @@ body{
     .sidebar-active{
         display: flex;
         z-index: 10;
+    }
+}
+
+@media (max-width:768px){
+    .products-preview .preview img{
+        height: 25rem;
+        border: 0.5px solid;
     }
 }
