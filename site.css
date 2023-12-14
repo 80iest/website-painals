@@ -5,7 +5,8 @@
     --black: #222;
     --yellow: #F1E287;
     --darkPink: #C88EA7;
-    --pink: #99627A;
+    /* way gamit mga fenk, should probably find them use */
+    --pink: #99627A;  
     --cream:#f5f1e0;
     --darkGreen:#2b6e30;
     --grey: #DED4D4;
@@ -48,7 +49,7 @@ body{
 
 .sidebar-menus a, .sidebar-logout a {
     padding: 5% 8%;
-    margin: 0.5rem 0;
+    margin: 3.5rem 0;
     display: flex;
     align-items: center;
     justify-content: flex-start;
@@ -66,6 +67,16 @@ body{
     background-color: var(--yellow);
     border-radius: 50px;
     color: var(--darkGreen);
+}
+
+.sidelogo a{
+    text-decoration: none;
+}
+
+.logo{
+    color: var(--whiteColor);
+    text-decoration: none;
+    
 }
 
 .main{
