@@ -47,13 +47,17 @@ body{
     color: var(--whiteColor);
 }
 
-.sidebar-menus a, .sidebar-logout a {
+.sidebar-logout{
+    visibility: hidden;
+}
+
+.sidebar-menus a{
     padding: 5% 8%;
-    margin: 3.5rem 0;
+    margin: 5rem 0;
     display: flex;
     align-items: center;
     justify-content: flex-start;
-    gap: 1rem;
+    gap: 2rem;
     text-decoration: none;
     color: var(--whiteColor);
    
@@ -75,7 +79,12 @@ body{
 
 .logo{
     color: var(--whiteColor);
-    text-decoration: none;
+    position: absolute;
+    top: 10;
+    left: 0;
+    height: 150px;
+    width: auto;
+    
     
 }
 
@@ -100,23 +109,31 @@ body{
     display: none;
 }
 
+
+.search-box{
+    width: 600px;
+    background: var(--whiteColor);
+    margin: 20px auto 0;
+    border-radius: 5px;
+}
+
 .search{
-    width: 60%;
-    height: 40px;
     display: flex;
-    justify-content: space-around;
     background-color: var(--whiteColor);
     border-radius: 20px;
+    align-items: center;
+    padding: 10px 20px;
     
 }
 
 .search input{
-    width: 80%;
-    height: 100%;
-    padding: 20px;
-    border: none;
-    border-radius: 20px;
+    flex: 1;
+    height: 50px;
+    background: transparent;
+    border: 0;
+    outline: 0;
     font-size: 18px;
+    color: #333;
 }
 
 .search-btn{
@@ -124,8 +141,10 @@ body{
     color: var(--primaryColor);
     border: none;
     border-radius: 20px;
-    width: 150px;
+    width: 100px;
+    height: 50px;
     cursor: pointer;
+    font-size: medium;
 }
 
 .search:hover {
@@ -136,6 +155,32 @@ body{
     background-color: var(--primaryColor);
     color: var(--whiteColor);
 }
+
+.result-box{
+    max-height: 300px;
+    overflow-y: scroll;
+
+}
+
+.result-box ul{
+    
+    padding: 15px 10px;
+    border-top: 1px solid #999;
+    font-size: large;
+}
+
+.result-box li{
+    list-style: none;
+    border-radius: 3px;
+    padding: 15px 10px;
+    cursor: pointer;
+   
+}
+
+.result-box li:hover{
+   background-color: var(--primaryColor);
+}
+
 
 .profile{
     display: flex;
@@ -148,11 +193,11 @@ body{
     justify-content: center;
     align-items: center;
     background-color: var(--whiteColor);
-    font-size: 20px;
+    font-size: 30px;
     color: var(--primaryColor);
     text-decoration: none;
     padding: 0 10px;
-    height: 40px;
+    height: 20x;
     border-radius: 20px;
 }
 
@@ -215,6 +260,8 @@ body{
     background-color: var(--whiteColor);
     cursor: pointer;
     border: 1px solid var(--darkGreen);
+       display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
     
 }
 
@@ -340,6 +387,8 @@ body{
     border-radius: 8px;
     margin: 1% 0;
     cursor: pointer;
+    width: 100%;
+ 
     
 }
 
