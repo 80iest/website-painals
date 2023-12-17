@@ -14,20 +14,18 @@
     <div class="sidebar">
         <!-- logo --> 
         <div class="sidelogo">
-            <a href="index.html"><h1 class="logo">PUDHUB</h1></a>
+            <a href="index.html"><img src="images/logo.png" class="logo"></a>
         </div>
         <!-- list of menus -->
         <div class="sidebar-menus">
-            <a href="#"><ion-icon name="receipt-outline"></ion-icon>Bills</a>
-            <a href="#"><ion-icon name="wallet-outline"></ion-icon>Wallet</a>
-            <a href="#"><ion-icon name="notifications-outline"></ion-icon>Notification</a>
-            <a href="#"><ion-icon name="settings-outline"></ion-icon>Settings</a>
-            <a href="#"><ion-icon name="people-outline"></ion-icon>About</a>
+            <a href="#"><ion-icon name="home-outline"></ion-icon>Homepage</a>
+            <a href="index.html"><ion-icon name="basket-outline"></ion-icon>Product</a>
+            <a href="about.html"><ion-icon name="people-outline"></ion-icon>About Us</a>
             
-             <!-- logout -->
+       
             
         </div>
-        <!-- logout -->
+       <!-- this is just to fill a gap, dont mind the logout sht -->
         <div class="sidebar-logout">
             <a href="#"><ion-icon name="log-out-outline"></ion-icon>Logout</a>
         </div>
@@ -38,11 +36,16 @@
     <div class="main">
         <!-- main navbar -->
         <div class="main-navbar">
-            <ion-icon class="menu-toggle" name="menu-outline"></ion-icon>
+        <div class="search-box">
             <div class="search">
-                <input type="text" placeholder="whatchu wanna buy">
-                <button class="search-btn">Search</button>
+                <input type="text" id="searchbar" placeholder="whatchu wanna buy">
+                <button class="search-btn">Search</button>       
             </div>
+            <div class="result-box">
+               
+            </div>
+        
+        </div>
             <div class="profile">
                 <a class="cart" href="#"><ion-icon name="cart-outline"></ion-icon></a>
                 <a class="user" href="#"><ion-icon name="person-outline"></ion-icon></a>
@@ -87,65 +90,13 @@
             </div>
         </div>  
     </div>
+    <hr class="divider">
         <!-- main veges -->
     <div class="main-veg">
             <!-- filter -->
         <div class="main-filter">
         
-             <div>
-                <h2 class="main-title">Menu <br>Category</h2>
-                <div class="main-arrow">
-                    <ion-icon class="back" name="chevron-back-circle-outline"></ion-icon>
-                    <ion-icon class="next" name="chevron-forward-circle-outline"></ion-icon>
-                </div>
-            </div>
-            <div class="filter-wrapper">
-                    <div class="filter-card">
-                        <div class="filter-icon">
-                            <ion-icon name="leaf-outline"></ion-icon>
-                        </div>
-                        <p>All Menus</p>
-                    </div>
-                    <div class="filter-card">
-                        <div class="filter-icon">
-                        <ion-icon name="leaf-outline"></ion-icon>
-                        </div>
-                        <p>Leafy</p>
-                    </div>
-                    <div class="filter-card">
-                        <div class="filter-icon">
-                        <ion-icon name="leaf-outline"></ion-icon>
-                        </div>
-                        <p>Cruciferous</p>
-                    </div>
-                    <div class="filter-card">
-                        <div class="filter-icon">
-                        <ion-icon name="leaf-outline"></ion-icon>
-                        </div>
-                        <p>Marrow</p>
-                    </div>
-                    <div class="filter-card">
-                        <div class="filter-icon">
-                        <ion-icon name="leaf-outline"></ion-icon>
-                        </div>
-                        <p>Root</p>
-                    </div>
-                    <div class="filter-card">
-                        <div class="filter-icon">
-                        <ion-icon name="leaf-outline"></ion-icon>
-                        </div>
-                        <p>Plant Stem</p>
-                    </div>
-                    <div class="filter-card">
-                        <div class="filter-icon">
-                        <ion-icon name="leaf-outline"></ion-icon>
-                        </div>
-                        <p>Allium</p>
-                    </div>
-                    
-                </div>
-            </div>
-            <hr class="divider">
+       
 
             <div class="main-detail">
                 <h2 class="main-title">Choose your pokemon</h2>
@@ -154,319 +105,290 @@
                         <img class="detail-img" src="images/basil.jpeg">
                         <div class="detail-desc">
                             <div class="detail-name">
-                                <h4>Basil</h4>
+                                <h4 class="vegename">Basil</h4>
                                 <p class="detail-sub">Basil is an annual herbaceous plant in the mint family Lamiaceae. It has square stems with leaves that grow on opposite sides, and the leaves are rounded, slightly cupped, and curve to form at point at the tip. The leaves are generally light green, although some varieties have reddish or purplish leaves.</p>
                                 <p class="price">149.00 PHP/kg</p>
                             </div>
-                            <ion-icon class="detail-favorites" name="bookmark-outline"></ion-icon>
                         </div>
                      </div>
                      <div class="detail-card" data-name="p-2">
                         <img class="detail-img" src="images/ampalaya.jpg">
                         <div class="detail-desc">
                             <div class="detail-name">
-                                <h4>Bitter Melon</h4>
+                                <h4 class="vegename">Bitter Melon</h4>
                                 <p class="detail-sub">Bitter Melon is a climbing vine, nearly or quite smooth, annual vine. Tendrils are simple, up to 20 centimeters long. Leaves are 2.5 to 10 centimeters in diameter, cut nearly to the base into 5 to 7 lobes, oblong-ovate, variously toothed, and heart-shaped at the base.</p>
                                 <p class="price">94.34 PHP/kg</p>
                             </div>
-                            <ion-icon class="detail-favorites" name="bookmark-outline"></ion-icon>
                         </div>
                      </div>
                      <div class="detail-card" data-name="p-3">
                         <img class="detail-img" src="images/artichoke.jpg">
                         <div class="detail-desc">
                             <div class="detail-name">
-                                <h4>Artichoke</h4>
+                                <h4 class="vegename">Artichoke</h4>
                                 <p class="detail-sub">Artichoke, more correctly known as globe artichoke, is a thistle-like plant grown for the edible blossom bud. It is one of only a few vegetable plants grown in North America as a perennial, with new growth arising from the roots annually.</p>
                                 <p class="price">103.25 PHP/kg</p>
                             </div>
-                            <ion-icon class="detail-favorites" name="bookmark-outline"></ion-icon>
                         </div>
                      </div>
                      <div class="detail-card" data-name="p-4">
                         <img class="detail-img" src="images/baguio-beans.jpg">
                         <div class="detail-desc">
                             <div class="detail-name">
-                                <h4>Baguio Beans</h4>
+                                <h4 class="vegename">Baguio Beans</h4>
                                 <p class="detail-sub">Baguio Beans Patig- Baguio beans (Phaseolus vulgaris) also known as snap beans are annual legumes grown for its tender green pods or seeds. The pods are excellent sources of fiber, beta-carotene, potassium, calcium and phosphorus. The crop grows best in medium to high elevation with temperature ranges from 16 to 29oC.</p>
                                 <p class="price">60.00 PHP/kg</p>
                             </div>
-                            <ion-icon class="detail-favorites" name="bookmark-outline"></ion-icon>
                         </div>
                      </div>
                      <div class="detail-card" data-name="p-5">
                         <img class="detail-img" src="images/banana-heart.jpg">
                         <div class="detail-desc">
                             <div class="detail-name">
-                                <h4>Banana Heart</h4>
+                                <h4 class="vegename">Banana Heart</h4>
                                 <p class="detail-sub">Banana blossom, also known as a “banana heart”, is a fleshy, purple-skinned flower, shaped like a tear, which grows at the end of a banana fruit cluster. Traditionally used in south-east Asian and Indian cooking, it can also be eaten raw and its chunky, flaky texture makes it an ideal substitute for fish.</p>
                                 <p class="price">145.00 PHP/kg</p>
                             </div>
-                            <ion-icon class="detail-favorites" name="bookmark-outline"></ion-icon>
                         </div>
                      </div>
                      <div class="detail-card" data-name="p-6">
                         <img class="detail-img" src="images/bok-choy.jpg">
                         <div class="detail-desc">
                             <div class="detail-name">
-                                <h4>Bok Choy</h4>
+                                <h4 class="vegename">Bok Choy</h4>
                                 <p class="detail-sub">Bok Choy, also called white Chinese cabbage, belongs to the leafy vegetable pak choi family of Chinese brassicas. Bok Choy has white or green, thick, crunchy stems with light to dark green wide leaves. Size can vary from 4-12 inches tall! All parts, stems and leaves, are eaten.</p>
                                 <p class="price">128.00 PHP/kg</p>
                             </div>
-                            <ion-icon class="detail-favorites" name="bookmark-outline"></ion-icon>
                         </div>
                      </div>
                      <div class="detail-card" data-name="p-7">
                         <img class="detail-img" src="images/brocolli.jpg">
                         <div class="detail-desc">
                             <div class="detail-name">
-                                <h4>Broccoli</h4>
+                                <h4 class="vegename">Broccoli</h4>
                                 <p class="detail-sub">Broccoli is a fast-growing annual plant that grows 60-90 cm (24–35 inches) tall. Upright and branching with leathery leaves, broccoli bears dense green clusters of flower buds at the ends of the central axis and the branches.</p>
                                 <p class="price">80.00 PHP/kg</p>
                             </div>
-                            <ion-icon class="detail-favorites" name="bookmark-outline"></ion-icon>
                         </div>
                      </div>
                      <div class="detail-card" data-name="p-8">
                         <img class="detail-img" src="images/capsicum.jpg">
                         <div class="detail-desc">
                             <div class="detail-name">
-                                <h4>Capsicum</h4>
+                                <h4 class="vegename">Capsicum</h4>
                                 <p class="detail-sub">Capsicum spp. is a genus of flowering plants in the nightshade family (Solanaceae) and has many subspecies, varieties and cultivars. The common names of Capsicum encompass cayenne pepper, tabasco pepper, red pepper, hot pepper, chili pepper, paprika, cayenne, Hungarian pepper, and pimento pepper</p>
                                 <p class="price">125.00 PHP/kg</p>
                             </div>
-                            <ion-icon class="detail-favorites" name="bookmark-outline"></ion-icon>
                         </div>
                      </div>
                      <div class="detail-card" data-name="p-9">
                         <img class="detail-img" src="images/carrot.jpg">
                         <div class="detail-desc">
                             <div class="detail-name">
-                                <h4>Carrot</h4>
+                                <h4 class="vegename">Carrot</h4>
                                 <p class="detail-sub">Carrot is a biennial, belonging to the family Apiaceae, and is an important vegetable for its fleshy edible, colorful roots. It varies in colour from white, yellow, orange, light purple, deep red to deep violet.</p>
                                 <p class="price">22.00 PHP/kg</p>
                             </div>
-                            <ion-icon class="detail-favorites" name="bookmark-outline"></ion-icon>
                         </div>
                      </div>
                      <div class="detail-card" data-name="p-10">
                         <img class="detail-img" src="images/cauliflower.jpg">
                         <div class="detail-desc">
                             <div class="detail-name">
-                                <h4>Cauliflower</h4>
+                                <h4 class="vegename">Cauliflower</h4>
                                 <p class="detail-sub">Cauliflowers are annual plants that reach about 0.5 metre (1.5 feet) tall and bear large rounded leaves that resemble collards (Brassica oleracea, variety acephala). As desired for food, the terminal cluster forms a firm, succulent “curd,” or head, that is an immature inflorescence (cluster of flowers).</p>
                                 <p class="price">50.00 PHP/kg</p>
                             </div>
-                            <ion-icon class="detail-favorites" name="bookmark-outline"></ion-icon>
                         </div>
                      </div>
                      <div class="detail-card" data-name="p-11">
                         <img class="detail-img" src="images/cherry-tomato.jpg">
                         <div class="detail-desc">
                             <div class="detail-name">
-                                <h4>Cherry Tomato</h4>
+                                <h4 class="vegename">Cherry Tomato</h4>
                                 <p class="detail-sub">The cherry tomato is a type of small round tomato believed to be an intermediate genetic admixture between wild currant-type tomatoes and domesticated garden tomatoes. Cherry tomatoes range in size from a thumbtip up to the size of a golf ball, and can range from spherical to slightly oblong in shape.</p>
                                 <p class="price">295.00 PHP/kg</p>
                             </div>
-                            <ion-icon class="detail-favorites" name="bookmark-outline"></ion-icon>
                         </div>
                      </div>
                      <div class="detail-card" data-name="p-12">
                         <img class="detail-img" src="images/corn.jpg">
                         <div class="detail-desc">
                             <div class="detail-name">
-                                <h4>Corn</h4>
+                                <h4 class="vegename">Corn</h4>
                                 <p class="detail-sub">Also called sweetcorn, sugar corn and pole corn, is a variety of corn grown for human consumption with a high sugar content. Sweet corn is the result of a naturally occurring recessive mutation in the genes which control conversion of sugar to starch inside the endosperm of the corn kernel.</p>
                                 <p class="price">35.00 PHP/kg</p>
                             </div>
-                            <ion-icon class="detail-favorites" name="bookmark-outline"></ion-icon>
                         </div>
                      </div>
                      <div class="detail-card" data-name="p-13">
                         <img class="detail-img" src="images/cucumber.jpg">
                         <div class="detail-desc">
                             <div class="detail-name">
-                                <h4>Cucumber</h4>
+                                <h4 class="vegename">Cucumber</h4>
                                 <p class="detail-sub">Cucumber is an annual climbing or spreading vine and common vegetable grown for its crisp, green fruit. It is a member of the Cucurbitaceae (gourd) family, and its native growing region is Himalaya to northern Thailand.</p>
                                 <p class="price">23.00 PHP/kg</p>
                             </div>
-                            <ion-icon class="detail-favorites" name="bookmark-outline"></ion-icon>
                         </div>
                      </div>
                      <div class="detail-card" data-name="p-14">
                         <img class="detail-img" src="images/garlic.jpeg">
                         <div class="detail-desc">
                             <div class="detail-name">
-                                <h4>Garlic</h4>
+                                <h4 class="vegename">Garlic</h4>
                                 <p class="detail-sub">Garlic is the small, white, round bulb of a plant that is related to the onion plant. Garlic has a very strong smell and taste and is used in cooking. We use garlic to add a very strong flavor to the food. If you don't want a strong taste of garlic, add one clove instead of two.</p>
                                 <p class="price">168.50 PHP/kg</p>
                             </div>
-                            <ion-icon class="detail-favorites" name="bookmark-outline"></ion-icon>
                         </div>
                      </div>
                      <div class="detail-card" data-name="p-15">
                         <img class="detail-img" src="images/ginger.jpg">
                         <div class="detail-desc">
                             <div class="detail-name">
-                                <h4>Ginger</h4>
+                                <h4 class="vegename">Ginger</h4>
                                 <p class="detail-sub">Ginger is a knotted, thick, beige underground stem, called a rhizome. The stem sticks up about 12 inches above ground with long, narrow, ribbed, green leaves, and white or yellowish-green flowers.</p>
                                 <p class="price">75.00 PHP/kg</p>
                             </div>
-                            <ion-icon class="detail-favorites" name="bookmark-outline"></ion-icon>
                         </div>
                      </div>
                      <div class="detail-card" data-name="p-16">
                         <img class="detail-img" src="images/green-cabbage.jpg">
                         <div class="detail-desc">
                             <div class="detail-name">
-                                <h4>Green Cabbage</h4>
+                                <h4 class="vegename">Green Cabbage</h4>
                                 <p class="detail-sub">Green cabbage is a leafy green vegetable that grows in tight, spherical heads, which gives it its nickname of cannonball cabbage. It's a cruciferous vegetable, which means that it's a member of the botanical family Brassicaceae, along with broccoli, cauliflower, Brussels sprouts, and kale.</p>
                                 <p class="price">78.52 PHP/kg</p>
                             </div>
-                            <ion-icon class="detail-favorites" name="bookmark-outline"></ion-icon>
                         </div>
                      </div>
                      <div class="detail-card" data-name="p-17">
                         <img class="detail-img" src="images/iceberg-lettuce.jpg">
                         <div class="detail-desc">
                             <div class="detail-name">
-                                <h4>Iceberg Lettuce</h4>
+                                <h4 class="vegename">Iceberg Lettuce</h4>
                                 <p class="detail-sub">Iceberg lettuce, also known as crisphead lettuce, has pale green leaves and grows in cabbage-like bulbs. It grows best in cool climates and requires a long winter season to grow fully. Lettuce and other leafy greens make up an important part of a healthy diet.</p>
                                 <p class="price">100.00 PHP/kg</p>
                             </div>
-                            <ion-icon class="detail-favorites" name="bookmark-outline"></ion-icon>
                         </div>
                      </div>
                      <div class="detail-card" data-name="p-18">
                         <img class="detail-img" src="images/jalapeno.jpg">
                         <div class="detail-desc">
                             <div class="detail-name">
-                                <h4>Jalapeno</h4>
+                                <h4 class="vegename">Jalapeno</h4>
                                 <p class="detail-sub">A medium sized chili pepper on a large bushy plant; green fruit will eventually ripen to bright red; a very popular edible pepper with a mild to medium hot flavor.</p>
                                 <p class="price">460.00 PHP/kg</p>
                             </div>
-                            <ion-icon class="detail-favorites" name="bookmark-outline"></ion-icon>
                         </div>
                      </div>
                      <div class="detail-card" data-name="p-19">
                         <img class="detail-img" src="images/Kangkong.jpg">
                         <div class="detail-desc">
                             <div class="detail-name">
-                                <h4>Kangkong</h4>
+                                <h4 class="vegename">Kangkong</h4>
                                 <p class="detail-sub">Kang Kong is an herbaceous trailing vine with a semi-aquatic habit. It has long hollow stems that help it to float when growing in water. The stems help keep the leaves above the surface and the plant continues to root at the nodes. The alternately positioned leaves are from 5-15cm long and arrow shaped, or lanceolate.</p>
                                 <p class="price">25.00 PHP/kg</p>
                             </div>
-                            <ion-icon class="detail-favorites" name="bookmark-outline"></ion-icon>
                         </div>
                      </div>
                      <div class="detail-card" data-name="p-20">
                         <img class="detail-img" src="images/leek.jpg">
                         <div class="detail-desc">
                             <div class="detail-name">
-                                <h4>Leek</h4>
+                                <h4 class="vegename">Leek</h4>
                                 <p class="detail-sub">Leeks are made up of sheaths of basal leaves that can be 15–25 cm long and 5 cm in diameter. The taste of leeks is milder than those of onion and garlic. The leek is a tall, hardy, biennial with white, narrowly ovoid bulbs and broad leaves. It resembles the green onion but is larger.</p>
                                 <p class="price">50.00 PHP/kg</p>
                             </div>
-                            <ion-icon class="detail-favorites" name="bookmark-outline"></ion-icon>
                         </div>
                      </div>
                      <div class="detail-card" data-name="p-21">
                         <img class="detail-img" src="images/mung-beans.jpg">
                         <div class="detail-desc">
                             <div class="detail-name">
-                                <h4>Mung Beans</h4>
+                                <h4 class="vegename">Mung Beans</h4>
                                 <p class="detail-sub">Mung beans, (Vigna radiata), legume plant of the pea family (Fabaceae), grown for its edible seeds and young sprouts. The mung bean is likely native to the Indian subcontinent and is widely cultivated in Asia for use in a variety of sweet and savory dishes, particularly in India, China, Korea, and Thailand.</p>
                                 <p class="price">194.00 PHP/kg</p>
                             </div>
-                            <ion-icon class="detail-favorites" name="bookmark-outline"></ion-icon>
                         </div>
                      </div>
                      <div class="detail-card" data-name="p-22">
                         <img class="detail-img" src="images/okra.jpg">
                         <div class="detail-desc">
                             <div class="detail-name">
-                                <h4>Okra</h4>
+                                <h4 class="vegename">Okra</h4>
                                 <p class="detail-sub">Okra leaves are heart-shaped and three- to five-lobed. The flowers are yellow with a crimson centre. The fruit, or pod, hairy at the base, is a tapering 10-angled capsule 10–25 cm (4–10 inches) in length (except in the dwarf varieties) that contains numerous oval dark-coloured seeds.</p>
                                 <p class="price">120.00 PHP/kg</p>
                             </div>
-                            <ion-icon class="detail-favorites" name="bookmark-outline"></ion-icon>
                         </div>
                      </div>
                      <div class="detail-card" data-name="p-23">
                         <img class="detail-img" src="images/onions-002.jpg">
                         <div class="detail-desc">
                             <div class="detail-name">
-                                <h4>Onions</h4>
+                                <h4 class="vegename">Onions</h4>
                                 <p class="detail-sub">An onion is a round vegetable with a brown skin that grows underground. It has many white layers on its inside which have a strong, sharp smell and taste. Will you chop an onion up for me? It is made with fresh minced meat, cooked with onion and a rich tomato sauce.</p>
                                 <p class="price">140.00 PHP/kg</p>
                             </div>
-                            <ion-icon class="detail-favorites" name="bookmark-outline"></ion-icon>
                         </div>
                      </div>
                      <div class="detail-card" data-name="p-24">
                         <img class="detail-img" src="images/peanut.jpg">
                         <div class="detail-desc">
                             <div class="detail-name">
-                                <h4>Peanuts</h4>
+                                <h4 class="vegename">Peanuts</h4>
                                 <p class="detail-sub">The peanut is an annual herbaceous plant growing 30 to 50 cm (12 to 20 in) tall. As a legume, it belongs to the botanical family Fabaceae, also known as Leguminosae, and commonly known as the legume, bean, or pea family. Like most other legumes, peanuts harbor symbiotic nitrogen-fixing bacteria in their root nodules.</p>
                                 <p class="price">137.45 PHP/kg</p>
                             </div>
-                            <ion-icon class="detail-favorites" name="bookmark-outline"></ion-icon>
                         </div>
                      </div>
                      <div class="detail-card" data-name="p-25">
                         <img class="detail-img" src="images/peas.jpg">
                         <div class="detail-desc">
                             <div class="detail-name">
-                                <h4>Peas</h4>
+                                <h4 class="vegename">Peas</h4>
                                 <p class="detail-sub">A pea is a most commonly green, occasionally golden yellow, or infrequently purple pod-shaped vegetable, widely grown as a cool-season vegetable crop. The seeds may be planted as soon as the soil temperature reaches 10 °C (50 °F), with the plants growing best at temperatures of 13 to 18 °C (55 to 64 °F).</p>
                                 <p class="price">40.00 PHP/kg</p>
                             </div>
-                            <ion-icon class="detail-favorites" name="bookmark-outline"></ion-icon>
                         </div>
                      </div>
                      <div class="detail-card" data-name="p-26">
                         <img class="detail-img" src="images/potato.jpg">
                         <div class="detail-desc">
                             <div class="detail-name">
-                                <h4>Potato</h4>
+                                <h4 class="vegename">Potato</h4>
                                 <p class="detail-sub">The potato is a starchy tuber of the plant Solanum tuberosum. Tubers are a type of organ that some plants use to store nutrients. Potatoes are one type of root vegetable. This name refers to any underground part of a plant that is eaten by humans, regardless of whether it actually is a root.</p>
                                 <p class="price">109.00 PHP/kg</p>
                             </div>
-                            <ion-icon class="detail-favorites" name="bookmark-outline"></ion-icon>
                         </div>
                      </div>
                      <div class="detail-card" data-name="p-27">
                         <img class="detail-img" src="images/radish.jpg">
                         <div class="detail-desc">
                             <div class="detail-name">
-                                <h4>Radish</h4>
+                                <h4 class="vegename">Radish</h4>
                                 <p class="detail-sub">Radishes are annual or biennial brassicaceous crops grown for their swollen tap roots which can be globular, tapering, or cylindrical. The root skin colour ranges from white through pink, red, purple, yellow, and green to black, but the flesh is usually white.</p>
                                 <p class="price">55.00 PHP/kg</p>
                             </div>
-                            <ion-icon class="detail-favorites" name="bookmark-outline"></ion-icon>
                         </div>
                      </div>
                      <div class="detail-card" data-name="p-28">
                         <img class="detail-img" src="images/red-cabbage.jpg">
                         <div class="detail-desc">
                             <div class="detail-name">
-                                <h4>Red Cabbage</h4>
+                                <h4 class="vegename">Red Cabbage</h4>
                                 <p class="detail-sub">Red cabbage is a nutrient-rich, cruciferous or Brassica vegetable that's related to broccoli, cauliflower, and kale. It's sometimes called purple cabbage because its leaves are a dark purple-reddish color. Red cabbage is usually a little smaller and denser than green cabbage, and it has a more peppery taste.</p>
                                 <p class="price">146.27 PHP/kg</p>
                             </div>
-                            <ion-icon class="detail-favorites" name="bookmark-outline"></ion-icon>
                         </div>
                      </div>
                      <div class="detail-card" data-name="p-29">
                         <img class="detail-img" src="images/romaine-lettuce.jpg">
                         <div class="detail-desc">
                             <div class="detail-name">
-                                <h4>Romaine Lettuce</h4>
+                                <h4 class="vegename">Romaine Lettuce</h4>
                                 <p class="detail-sub">Romaine lettuce is medium to large in size with an elongated shape and stiff, upright leaves. The thick heads are loosely connected to a central blanched base and the leaves, averaging 10-15 centimeters in length, are broad with many folds and creases. The outer leaves are dark green with a prominent white central rib, and as the leaves grow smaller in the center, they become paler in color almost fading to white. Romaine lettuce is crisp, succulent, and crunchy with a mild, slightly bitter taste.</p>
                                 <p class="price">264.95 PHP/kg</p>
                             </div>
-                            <ion-icon class="detail-favorites" name="bookmark-outline"></ion-icon>
                         </div>
                      </div>
               
@@ -474,33 +396,30 @@
                         <img class="detail-img" src="images/soya.jpg">
                         <div class="detail-desc">
                             <div class="detail-name">
-                                <h4>Soya Bean</h4>
+                                <h4 class="vegename">Soya Bean</h4>
                                 <p class="detail-sub">Soybeans are legumes related to peas, clover and alfalfa. Soybeans are dicots, which means they have two cotyledons. Each soybean plant produces 60 to 80 pods, each holding three pea-sized beans. Soybeans are hardy plants and well adapted to a variety of soils and soil conditions.</p>
                                 <p class="price">180.00 PHP/kg</p>
                             </div>
-                            <ion-icon class="detail-favorites" name="bookmark-outline"></ion-icon>
                         </div>
                      </div>
                      <div class="detail-card" data-name="p-31">
                         <img class="detail-img" src="images/spinach.jpg">
                         <div class="detail-desc">
                             <div class="detail-name">
-                                <h4>Spinach</h4>
+                                <h4 class="vegename">Spinach</h4>
                                 <p class="detail-sub">Spinach, Spinacia oleracea, is a leafy herbaceous annual plant in the family Amaranthaceae grown for its leaves which are used as a vegetable. The spinach plant has simple leaves which stem from the center of the plant and measure about 2–30 cm (0.8–12.0 in) long and 1 to 15 cm (0.4–6.0 in) across.</p>
                                 <p class="price">250.00 PHP/kg</p>
                             </div>
-                            <ion-icon class="detail-favorites" name="bookmark-outline"></ion-icon>
                         </div>
                      </div>
                      <div class="detail-card" data-name="p-32">
                         <img class="detail-img" src="images/spring-onion.jpg">
                         <div class="detail-desc">
                             <div class="detail-name">
-                                <h4>Spring Onion</h4>
+                                <h4 class="vegename">Spring Onion</h4>
                                 <p class="detail-sub">Spring Onions. Also known as scallions or green onions, spring onions are in fact very young onions, harvested before the bulb has had a chance to swell. Both the long, slender green tops and the small white bulb are edible, and are good either raw or cooked.</p>
                                 <p class="price">233.76 PHP/kg</p>
                             </div>
-                            <ion-icon class="detail-favorites" name="bookmark-outline"></ion-icon>
                         </div>
                      </div>
                
@@ -508,33 +427,30 @@
                         <img class="detail-img" src="images/sweet-potato.jpg">
                         <div class="detail-desc">
                             <div class="detail-name">
-                                <h4>Sweet Potato</h4>
+                                <h4 class="vegename">Sweet Potato</h4>
                                 <p class="detail-sub">The sweet potato or sweetpotato (Ipomoea batatas) is a dicotyledonous plant that belongs to the bindweed or morning glory family, Convolvulaceae. Its large, starchy, sweet-tasting tuberous roots are used as a root vegetable. The young shoots and leaves are sometimes eaten as greens.</p>
                                 <p class="price">51.73 PHP/kg</p>
                             </div>
-                            <ion-icon class="detail-favorites" name="bookmark-outline"></ion-icon>
                         </div>
                      </div>
                      <div class="detail-card" data-name="p-34">
                         <img class="detail-img" src="images/talong.jpg">
                         <div class="detail-desc">
                             <div class="detail-name">
-                                <h4>Eggplant</h4>
+                                <h4 class="vegename">Eggplant</h4>
                                 <p class="detail-sub">The fruit is a large egg-shaped berry with a glossy surface that varies in colour from dark purple to red, pink, yellowish, or white and is sometimes striped; the colour and shape of the white variety is the source of the common name.</p>
                                 <p class="price">79.59 PHP/kg</p>
                             </div>
-                            <ion-icon class="detail-favorites" name="bookmark-outline"></ion-icon>
                         </div>
                      </div>
                      <div class="detail-card" data-name="p-35">
                         <img class="detail-img" src="images/tomato.jpg">
                         <div class="detail-desc">
                             <div class="detail-name">
-                                <h4>Tomato</h4>
+                                <h4 class="vegename">Tomato</h4>
                                 <p class="detail-sub">The tomato fruit is globular or ovoid. Botanically, the fruit exhibits all of the common characteristics of berries; a simple fleshy fruit that encloses its seed in the pulp. The outer skin is a thin and fleshy tissue that comprises the remainder of the fruit wall as well as the placenta.</p>
                                 <p class="price">119.14 PHP/kg</p>
                             </div>
-                            <ion-icon class="detail-favorites" name="bookmark-outline"></ion-icon>
                         </div>
                      </div>
 
@@ -947,11 +863,12 @@
                      
                 </div>
             </div>
-            
+           
             <!-- end pilter /// aron rani di ko maglibog kay potaena andaming div -->
         </div>
  
     </div>
+    
 
 
 
