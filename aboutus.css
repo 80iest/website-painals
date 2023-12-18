@@ -1,0 +1,47 @@
+
+
+/*ADDING HERE FOR ABOUT US*/
+
+
+
+h2, h3, p, a, img {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: large;
+}
+
+
+
+.center {
+    text-align: center;
+}
+
+.row {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 20px; 
+}
+
+.pepol {
+    text-align: center;
+}
+
+.pepol img {
+    width: 250px;
+    height: 250px;
+    object-fit: cover;
+}
+
+.pepol h3,
+.pepol p {
+    margin: 10px 0;
+}
+
+
+.footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #f1f1f1; 
+}
