@@ -32,6 +32,7 @@ body{
     display: flex;
 }
 
+
 .sidebar{
     height: 100%;
     width: 250px;
@@ -45,7 +46,9 @@ body{
     font-size: 20px;
     background-color: var(--primaryColor);
     color: var(--whiteColor);
+    background-image: url(images/vine2.png);
 }
+
 
 .sidebar-logout{
     visibility: hidden;
@@ -159,6 +162,7 @@ body{
 .result-box{
     max-height: 300px;
     overflow-y: scroll;
+    opacity: 0.8;
 
 }
 
@@ -205,6 +209,164 @@ body{
     box-shadow: rgba(149, 157, 165, 0.2)0px 8px 24px;
     background-color: var(--primaryColor);
     color: white;
+}
+
+/* add to cart sht */
+
+/* rene de carts */
+
+.cart {
+    
+    text-decoration: none;
+    color: #6AA164;;
+    font-size: 24px;
+    position: relative;
+}
+
+.cart-counter {
+    background-color: red;
+    color: white;
+    border-radius: 50%;
+    position: absolute;
+    top: -8px;
+    right: -8px;
+    padding: 2px 6px;
+    font-size: 12px;    
+}
+
+.cart {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--whiteColor);
+    font-size: 20px;
+    color: var(--primaryColor);
+    text-decoration: none;
+    padding: 0 10px;
+    height: 40px;
+    border-radius: 20px;
+}
+
+#cart-items {
+    display: none;
+    position: fixed;
+    top: 50px; 
+    right: 10px;
+    width: 300px;
+    padding: 10px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+}
+
+#cart-container {
+    max-height: 300px;
+    overflow-y: auto;
+}
+
+#cart-list {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+#cart-list li {
+    margin-bottom: 10px;
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 5px;
+}
+
+#cart-total {
+    font-weight: bold;
+}
+
+
+
+ion-icon {
+    font-size: 24px;
+    margin-right: 5px;
+}
+
+.cart-list-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    border-bottom: 1px solid #ddd; 
+}
+
+.product-info {
+    flex: 1; 
+}
+
+.product-name {
+    font-size: 1.2em;
+    font-weight: bold;
+}
+
+.product-price {
+    color: #3498db;
+}
+
+.quantity-control {
+    display: flex;
+    align-items: center;
+}
+
+.quantity-arrow {
+    cursor: pointer;
+    font-size: 1.2em;
+    margin: 0 5px;
+    color: #27ae60; 
+}
+
+.remove-button {
+    background-color: #e74c3c; 
+    color: #fff;
+    border: none;
+    padding: 8px 12px;
+    cursor: pointer;
+    font-size: 1em;
+    margin-left: 10px;
+}
+
+.remove-button:hover {
+    background-color: #c0392b; 
+}
+
+.cart-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.close-button, .checkout-button {
+    padding: 10px 20px;
+    font-size: 1em;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+}
+
+.close-button {
+    background-color: #e74c3c; 
+    color: #fff;
+}
+
+.checkout-button {
+    background-color: #27ae60; 
+    color: #fff;
+}
+
+.close-button:hover {
+    background-color: #c0392b; 
+}
+
+.checkout-button:hover {
+    background-color: #219653;
+
 }
 
 .main-highlight{
@@ -387,7 +549,10 @@ body{
     border-radius: 8px;
     margin: 1% 0;
     cursor: pointer;
-    width: 100%;
+    width: min(90%, 40rem);
+    display: grid;
+    
+    
  
     
 }
@@ -474,7 +639,7 @@ body{
     background: #f3f1e3;
     position: relative;
     margin: 2rem;
-    width: 40rem;
+    width: 80rem;
     border: 1px solid;
 }
 
