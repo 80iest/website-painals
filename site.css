@@ -383,6 +383,26 @@ ion-icon {
     align-items: center;
 }
 
+.banner-wrapper{
+    position: relative;
+}
+
+
+
+.banner{
+    position: relative;
+    max-width: 100%;
+    max-height: 100vh;
+    overflow: hidden;
+}
+
+
+
+.yaun{
+    height: 500px;
+    width: 1490px;
+}
+
 .main-title{
     font-size: 22px;
 }
