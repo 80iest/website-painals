@@ -97,7 +97,7 @@ body{
     padding: 2%;
     background-color: var(--cream);
     margin-left: 250px;
-    
+    background-image: url(./homepagebg.png);
    
 }
 
